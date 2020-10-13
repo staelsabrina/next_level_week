@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*Vai considerar o tamanho da caixa a partir da borda e não do padding/margin*/
 }
 
 body {    
