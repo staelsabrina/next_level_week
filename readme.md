@@ -8,7 +8,10 @@ Também foram trabalhados conceitos de ID, Class e como linkar páginas de estil
 
 
 Segundo Dia:
-Encerrmento da landing page. Aplicação de responsividade com css. Foram trabalhados conceitos das unidades de medida rem, em, vw, vh. Criação da página orpanages, que vai conter um mapa com as localizações dos orfanatos. Foram aplicados os mesmos conceitos de responsividade, animações e transição do primeiro dia.
+Encerramento da landing page. Aplicação de responsividade com css. Foram trabalhados conceitos das unidades de medida rem, em, vw, vh. Criação da página orpanages, que vai conter um mapa com as localizações dos orfanatos. Foram aplicados os mesmos conceitos de responsividade, animações e transição do primeiro dia.
+Em JS foi explicado conceitos como variáveis, tipo de dados, objetos, funções, repetições e condições. Foi utilizada a biblioteca leafletjs para criar o mapa interativo. Foram criadas a página de orfanato cadastrado e suas respectiva folha de estilo e arquivo js. Foram configurados botões e galeria de imagens.
+
+Terceiro Dia:
 
 
 <a href="https://nextlevelweek.com/">NLW#3</a>
