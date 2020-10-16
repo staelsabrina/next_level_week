@@ -12,7 +12,7 @@ Encerramento da landing page. Aplicação de responsividade com css. Foram traba
 Em JS foi explicado conceitos como variáveis, tipo de dados, objetos, funções, repetições e condições. Foi utilizada a biblioteca leafletjs para criar o mapa interativo. Foram criadas a página de orfanato cadastrado e suas respectiva folha de estilo e arquivo js. Foram configurados botões e galeria de imagens.
 
 Terceiro Dia:
-
+Criamos a página de formulário para cadastramento de novo orfanato.
 
 <a href="https://nextlevelweek.com/">NLW#3</a>
 
