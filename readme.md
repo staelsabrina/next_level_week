@@ -12,7 +12,8 @@ Encerramento da landing page. Aplicação de responsividade com css. Foram traba
 Em JS foi explicado conceitos como variáveis, tipo de dados, objetos, funções, repetições e condições. Foi utilizada a biblioteca leafletjs para criar o mapa interativo. Foram criadas a página de orfanato cadastrado e suas respectiva folha de estilo e arquivo js. Foram configurados botões e galeria de imagens.
 
 Terceiro Dia:
-Criamos a página de formulário para cadastramento de novo orfanato. Foram criadas imagens svg para botões. Em JS foram criadas as funções relacionadas ao mapa da página de cadastramento (criação de ícone e marcadores), função para adicionar e remover campo de inserção de link para fotos e função de validação dos botões "sim" e "não" se o orfanato aceita visitas aos finais de semana. 
+Criamos a página de formulário para cadastramento de novo orfanato. Foram criadas imagens svg para botões. Em JS foram criadas as funções relacionadas ao mapa da página de cadastramento (criação de ícone e marcadores), função para adicionar e remover campo de inserção de link para fotos e função de validação dos botões "sim" e "não" se o orfanato aceita visitas aos finais de semana.
+Alterações: tirei o padding e alterei o tamanho do background no container do @media, para se ajustar melhor à imagem, que ficava espichada. 
 
 <a href="https://nextlevelweek.com/">NLW#3</a>
 
