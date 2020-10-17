@@ -13,7 +13,10 @@ Em JS foi explicado conceitos como variáveis, tipo de dados, objetos, funções
 
 Terceiro Dia:
 Criamos a página de formulário para cadastramento de novo orfanato. Foram criadas imagens svg para botões. Em JS foram criadas as funções relacionadas ao mapa da página de cadastramento (criação de ícone e marcadores), função para adicionar e remover campo de inserção de link para fotos e função de validação dos botões "sim" e "não" se o orfanato aceita visitas aos finais de semana.
-Alterações: tirei o padding e alterei o tamanho do background no container do @media, para se ajustar melhor à imagem, que ficava espichada.gi 
+Alterações: tirei o padding e alterei o tamanho do background no container do @media, para se ajustar melhor à imagem, que ficava espichada.
+
+Quarto Dia:
+Começamos a construir o backend da aplicação. Fizemos a preparação do ambiente, instalando nodejs. Organizamos as pastas e arquivos para funcionamento do server. Criação das rotas dentro do server. Explicação sobre template engine, que será utilizado para facilitar a visualização dos dados na aplicação. Convertemos e acoplamos todo o front-end ao back-end. Transformamos a página orphanage em uma estrutura de dados. Criamos um arquivo fakedata para armazenar o cadastro de duas casas. Alteramos arquivos de front-end para funcionar dinamicamente com o banco de dados.
 
 <a href="https://nextlevelweek.com/">NLW#3</a>
 
