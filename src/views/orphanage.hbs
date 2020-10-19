@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Linha responsável por aplicar a resposividade através do @media no css-->
-    <title>Casa-Lar Meu Refúgio | Happy</title>
+    <title>{{ orphanage.name }} | Happy</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <link rel="icon" href="/images/logo-icon.png" />
@@ -31,43 +31,29 @@
       
       <main class="animate-appear with-sidebar">
         <div class="orphanage-details">
-          <img src="/images/home.jpg" alt="Casa Lar Meu Refúgio">
+          <img src="{{orphanage.firstImage}}" alt="{{ orphanage.name }}">
           <div class="images">
 
-            <button onclick="selectImage(event)" class="active" type="button">
-              <img src="https://source.unsplash.com/random?id=1" alt="Casa Lar meu refúgio">
-            </button>
-
-            <button onclick="selectImage(event)" type="button">
-              <img src="https://source.unsplash.com/random?id=2" alt="Casa Lar meu refúgio">
-            </button>
-
-            <button onclick="selectImage(event)" type="button">
-              <img src="https://source.unsplash.com/random?id=3" alt="Casa Lar meu refúgio">
-            </button>
-
-            <button onclick="selectImage(event)" type="button">
-              <img src="https://source.unsplash.com/random?id=4" alt="Casa Lar meu refúgio">
-            </button>
-
-            <button onclick="selectImage(event)" type="button">
-              <img src="https://source.unsplash.com/random?id=5" alt="Casa Lar meu refúgio">
-            </button>
-
-            <button onclick="selectImage(event)" type="button">
-              <img src="https://source.unsplash.com/random?id=6" alt="Casa Lar meu refúgio">
-            </button>
-
+            {{#each orphanage.images}}
+              <button onclick="selectImage(event)" class="active" type="button">
+                <img src="{{this}}" alt="{{ orphanage.name }}">
+              </button>
+            {{/each}}
+            
           </div>
           <div class="orphanage-details-content">
 
-            <h1>Casa Lar Meu Refúgio</h1>
-            <p>Presta acolhimento institucional de crianças e adolecentes em situação de vulnerabilidade social. Construção de um futuro melhor com apoio e amor.</p>
+            <h1>{{ orphanage.name }}</h1>
+            <p>{{ orphanage.about }}</p>
 
             <div class="map-container">
               <div id="mapid"></div>
+              <span 
+              data-lat="{{orphanage.lat}}"
+              data-lng="{{orphanage.lng}}"
+              ></span>
               <footer>
-                <a href="">Ver rotas no Google Maps</a>
+                <a target="_blank" href="http://maps.google.com/mobile?q={{orphanage.lat}},{{orphanage.lng}}&z=15">Ver rotas no Google Maps</a>
               </footer>
             </div>
 
@@ -75,22 +61,30 @@
 
             <h2>Instruções para Visita</h2>
 
-            <p>Venha como se sentir a vontade e traga muito amor e paciência para dar.</p>
+            <p>{{orphanage.instructions}}</p>
 
             <div class="open-details">
               <div class="hour">
                 <img src="/images/clock.svg" alt="Horários">
-                Horário de Visitas: Das 8h até 18h
+                {{orphanage.opening_hours}}
               </div>
-              <div class="open-on-weekends">
-                <img src="/images/info.svg" alt="informações">
-                Atendemos fim de semana.
-              </div>
+              {{#if orphanage.open_on_weekends}}
+                <div class="open-on-weekends open">                
+                  <img src="/images/info.svg" alt="informações">
+                  Atendemos fim de semana.                
+                </div>
+              {{else}}
+                <div class="open-on-weekends closed">                
+                  <img src="/images/info-red.svg" alt="informações">
+                  Não atendemos fim de semana.                
+                </div>
+              {{/if}}
             </div>
-            <button class="primary-button" type="button">
+
+            <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{orphanage.whatsapp}}" target="_blank" class="primary-button" type="button">
               <img src="/images/whatsapp.svg" alt="Chamar no whatsapp">
               Entrar em contato.
-            </button>
+            </a>
 
           </div>
         </div>

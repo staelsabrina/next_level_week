@@ -1,7 +1,5 @@
 Projeto HAPPY criado durante a 3a edição da Next Level Week.
 
-<a href="https://staelsabrina.github.io/next_level_week/index.html">Página do Projeto</a><br>
-
 Primeiro Dia:
 No primeiro dia foram ensinados rapidamente conceitos de programação, lógica, HTML e CSS. O que é front e o que é backend e como funcionam as requisições. Foi configurado o ambiente de desenvolvimento com navegador Chrome e VSCode.
 Também foram trabalhados conceitos de ID, Class e como linkar páginas de estilo. No CSS foram ensinados os conceitos de cascata, a "preferência" entre cada local de style, aplicação de animações e transition.
@@ -18,6 +16,9 @@ Alterações: tirei o padding e alterei o tamanho do background no container do 
 Quarto Dia:
 Começamos a construir o backend da aplicação. Fizemos a preparação do ambiente, instalando nodejs. Organizamos as pastas e arquivos para funcionamento do server. Criação das rotas dentro do server. Explicação sobre template engine, que será utilizado para facilitar a visualização dos dados na aplicação. Convertemos e acoplamos todo o front-end ao back-end. Transformamos a página orphanage em uma estrutura de dados. Criamos um arquivo fakedata para armazenar o cadastro de duas casas. Alteramos arquivos de front-end para funcionar dinamicamente com o banco de dados.
 
-<a href="https://nextlevelweek.com/">NLW#3</a>
+Quinto Dia: 
+Hoje trabalhamos com SQLite. Foi explicado como ele funciona. Criamos um arquivo de teste para adicionar os dados do primeiro orfanato. Fizemos mudanças nos arquivos pages.js, orphanages.hbs, page-orphanages para linkar com o banco de dados. Alteramos também alguns arquivos CSS. For fim, terminamos a página de formulário, para adicionar novos orfanatos no sistema.
+
+< href="https://nextlevelweek.com/">NLW#3</>
 
 
